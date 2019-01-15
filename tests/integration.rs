@@ -1,4 +1,9 @@
-use tests_writing::{libx::x, liby::y, test_helper::helper};
+#![feature(uniform_paths)]
+
+mod test_helper;
+
+use tests_writing::{libx::x, liby::y};
+use test_helper::helper;
 
 #[test]
 fn test_together() {
